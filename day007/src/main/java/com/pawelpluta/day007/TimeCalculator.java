@@ -1,25 +1,29 @@
 package com.pawelpluta.day007;
 
-import java.time.Duration;
-
 class TimeCalculator {
+
+    private static final int SECONDS_IN_MINUTE = 60;
+    private static final int SECONDS_IN_HOUR = 3600;
+    private static final int DAYS_IN_WEEK = 7;
+    private static final int HOURS_IN_DAY = 24;
+
     Long minutesToSeconds(Long minutes) {
-        return null;
+        return minutes * SECONDS_IN_MINUTE;
     }
 
     Long secondsToHours(Long seconds) {
-        return null;
+        return seconds / SECONDS_IN_HOUR;
     }
 
     Long weeksToDays(Long weeks) {
-        return null;
+        return weeks * DAYS_IN_WEEK;
     }
 
     Long daysToWeeks(Long days) {
-        return null;
+        return days / 7;
     }
 
     Long weeksToSeconds(Long weeks) {
-        return null;
+        return weeks * DAYS_IN_WEEK * HOURS_IN_DAY * SECONDS_IN_HOUR;
     }
 }
